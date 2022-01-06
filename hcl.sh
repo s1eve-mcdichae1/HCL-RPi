@@ -21,13 +21,7 @@ rp_module_section="exp"
 rp_module_flags="!x86"
 
 function depends_hcl() {
-    local depends=(cmake)
-    if isPlatform "rpi4"; then
-        depends+=(libsdl2-dev libsdl2-mixer-dev)
-    else
-        depends+=(libsdl1.2-dev libsdl-mixer1.2-dev)
-    fi
-    getDepends "${depends[@]}"
+    getDepends libsdl2-dev libsdl2-mixer-dev cmake
 }
 
 function sources_hcl() {
@@ -35,10 +29,8 @@ function sources_hcl() {
 }
 
 function build_hcl() {
-    local params=(-DCMAKE_INSTALL_PREFIX:PATH="$md_inst")
-    isPlatform "rpi4" && params+=(-DUSE_SDL2=ON)
     mkdir build && cd build
-    cmake "${params[@]}" ..
+    cmake -DCMAKE_INSTALL_PREFIX:PATH="$md_inst" -DUSE_SDL2=ON ..
     make
     md_ret_require="$md_build/build/hcl"
 }
