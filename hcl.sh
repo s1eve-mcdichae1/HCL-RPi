@@ -18,7 +18,6 @@ rp_module_help="Linux port by ptitSeb, based on the 3DS port by 4chan/anon\n\nMa
 rp_module_repo="git https://github.com/ptitSeb/hydracastlelabyrinth.git master e112bdb"
 rp_module_licence="GPL2 https://github.com/ptitSeb/hydracastlelabyrinth/blob/master/LICENSE"
 rp_module_section="exp"
-rp_module_flags="!x86"
 
 function depends_hcl() {
     getDepends libsdl2-dev libsdl2-mixer-dev cmake
