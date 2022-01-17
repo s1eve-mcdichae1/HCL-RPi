@@ -24,7 +24,7 @@ function depends_hcl() {
 }
 
 function sources_hcl() {
-     gitPullOrClone
+    gitPullOrClone
 }
 
 function build_hcl() {
