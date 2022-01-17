@@ -43,6 +43,5 @@ function install_hcl() {
 
 function configure_hcl() {
     addPort "$md_id" "hcl" "Hydra Castle Labyrinth" "pushd $md_inst; $md_inst/hcl -d; popd"
-    mkRomDir "ports"
     moveConfigDir "$home/.hydracastlelabyrinth" "$md_conf_root/hcl"
 }
