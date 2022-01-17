@@ -15,8 +15,8 @@
 rp_module_id="hcl"
 rp_module_desc="Hydra Castle Labyrinth - a Metroidvania game created by E. Hashimoto (a.k.a. Buster)"
 rp_module_help="Linux port by ptitSeb, based on the 3DS port by 4chan/anon\n\nMake sure to set the language to English from the options menu before playing. If you are experiencing slowdowns in game, make sure the xBRZ shader is turned off in the options menu."
-rp_module_repo="git https://github.com/ptitSeb/hydracastlelabyrinth.git master c5e6afc"
 rp_module_licence="GPL2 https://github.com/ptitSeb/hydracastlelabyrinth/blob/master/LICENSE"
+rp_module_repo="git https://github.com/ptitSeb/hydracastlelabyrinth.git master c5e6afc"
 rp_module_section="exp"
 
 function depends_hcl() {
