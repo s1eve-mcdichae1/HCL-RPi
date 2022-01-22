@@ -29,7 +29,7 @@ function sources_hcl() {
 
 function build_hcl() {
     mkdir build && cd build
-    cmake -DCMAKE_INSTALL_PREFIX:PATH="$md_inst" -DUSE_SDL2=ON ..
+    cmake -DUSE_SDL2=ON ..
     make
     md_ret_require="$md_build/build/hcl"
 }
