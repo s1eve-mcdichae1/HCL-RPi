@@ -6,7 +6,7 @@ Adapted from ZeroJay's RetroPie-Extra (https://github.com/zerojay/RetroPie-extra
 Tested RPi4 only. Please report success or failure on other platforms.
 
 #### Hydra Castle Labyrinth
-A free Metroidvania game by E. Hashimoto (a.k.a. Buster).
+A free flip-screen Metroidvania game by E. Hashimoto (a.k.a. Buster).
 
 This module installs the Linux port by ptitSeb, hosted at https://github.com/ptitSeb/hydracastlelabyrinth.
 
